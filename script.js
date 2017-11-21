@@ -33,7 +33,7 @@
         });
 
     // setup drop areas.
-    setupDropzone('.number', '.function');
+    setupDropzone('.function .variable', '.number');
 
     /**
      * Setup a given element as a dropzone.
@@ -109,7 +109,7 @@
     document.getElementById("addDrag").addEventListener("click", function() {
       var wrapper = document.createElement("div");
 
-      wrapper.innerHTML = '<div class="js-drag math-item function" style="left: ' + size * 2 + 'px; top: ' + size + 'px;" data-x="' + size * 2 + '" data-y="' + size + '"></div>';
+      wrapper.innerHTML = '<div class="js-drag math-item number" style="left: ' + size * 2 + 'px; top: ' + size + 'px;" data-x="' + size * 2 + '" data-y="' + size + '"></div>';
       var div = wrapper.firstChild;
       document.getElementById("container").appendChild(div);
     });
@@ -117,7 +117,7 @@
     document.getElementById("addDrop").addEventListener("click", function() {
       var wrapper = document.createElement("div");
 
-      wrapper.innerHTML = '<div class="js-drag js-drop math-item number" style="left: ' + size * 2 + 'px; top: ' + size + 'px;" data-x="' + size * 2 + '" data-y="' + size + '"></div>';
+      wrapper.innerHTML = '<div class="js-drag js-drop math-item function" style="left: ' + size * 2 + 'px; top: ' + size + 'px;" data-x="' + size * 2 + '" data-y="' + size + '"></div>';
       var div = wrapper.firstChild;
       document.getElementById("container").appendChild(div);
     });
