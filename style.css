@@ -1,123 +1,24 @@
-/* http://meyerweb.com/eric/tools/css/reset/
-   v2.0 | 20110126
-   License: none (public domain)
-*/
-
-html, body, div, span, applet, object, iframe,h1, h2, h3, h4, h5, h6, p, blockquote, pre,a, abbr, acronym, address, big, cite, code,del, dfn, em, img, ins, kbd, q, s, samp,small, strike, strong, sub, sup, tt, var,b, u, i, center,dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,table, caption, tbody, tfoot, thead, tr, th, td,article, aside, canvas, details, embed,figure, figcaption, footer, header, hgroup,menu, nav, output, ruby, section, summary,time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
-}
-/* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure,footer, header, hgroup, menu, nav, section {
-	display: block;
-}
-body {
-	line-height: 1;
-}
-ol, ul {
-	list-style: none;
-}
-blockquote, q {
-	quotes: none;
-}
-blockquote:before, blockquote:after,q:before, q:after {
-	content: '';
-	content: none;
-}
-table {
-	border-collapse: collapse;
-	border-spacing: 0;
+.item {
+    padding: 1em;
+    display: inline-block;
+		background: #ffffff;
+		position: relative;
+		box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14), 0 1px 5px 0 rgba(0,0,0,0.12), 0 3px 1px -2px rgba(0,0,0,0.2);
+		z-index: 500;
 }
 
-body { font-family: Helvetica, Arial, sans-serif; }
-
-.dropzone-wrapper {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
+.item p {
+    padding: 1em 1.5em;
 }
 
-.math-item {
-  height:40px;
-  max-width: 40px;
-  background: #dddddd;
-	border: 2px ridge #ddd;
-  color: #fff;
-  display: block;
-  position: absolute;
-  z-index: 10;
-  text-align: center;
-
-  -ms-touch-action: none;
-      touch-action: none;
-
-	transition: background .3s;
+._jsPlumb_endpoint {
+	z-index: 900;
 }
 
-.number {
-	border-radius: 25px;
+._jsPlumb_connector {
+	z-index: 950;
 }
 
-.function {
-	border: 0;
-  height: 44px;
-  max-width: 44px;
-}
-
-.js-drag.-drop-possible { background-color: #53b18c; }
-.js-drop.-drop-active  { background-color: #eee; border-color: #53b18c}
-.js-drop.-drop-correct  { border-color: #e4f587; }
-.js-drop.-drop-over  { background: #999; }
-.js-drop.-drop-possible { border-color: #666; }
-
- /* Add Buttons */
-.addBtn {
-	position: absolute;
-  height: 40px;
-  width: 40px;
-	background: #598dff;
-	color: #fff;
-	text-align: center;
-  line-height: 36px;
-	font-size: 17px;
-	font-weight: bold;
-	cursor: pointer;
-}
-
-.addNewNumber {
-	top: 20px;
-	left: 20px;
-}
-
-.addNewFunction {
-	top: 80px;
-	left: 20px;
-}
-
-.addNewResult {
-	top: 140px;
-	left: 20px;
-}
-
-.function-content {
-	position: relative;
-}
-
-.function-content .variable {
-	position: absolute;
-	left: 0;
-	top:-30px;
+.jsPlumb_dragged {
 	z-index: 1000;
-}
-
-.function-content .result {
-	position: absolute;
-	left: 0;
-	top:30px;
 }

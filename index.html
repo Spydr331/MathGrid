@@ -3,22 +3,30 @@
 <head lang="en">
   <meta charset="UTF-8">
   <title>Math Grid</title>
+
+  <link href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css" type="text/css" rel="stylesheet" />
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" type="text/css" rel="stylesheet" />
+  <link href="https://s3-us-west-2.amazonaws.com/vertical3/boilerplate-jsplumb.css" type="text/css" rel="stylesheet" />
+
+
+
   <link href="/style.css" type="text/css" rel="stylesheet" />
 </head>
 <body>
-  <div id="container">
-    <button id="addDrag" class="addNewNumber addBtn">#</button>
-    <button id="addDrop" class="addNewFunction addBtn">{ }</button>
 
-    <div class="js-drag math-item function" style="left: 205px; top: 209px;" data-x="205" data-y="209" active="0">
-      <div class="function-content">
-        <div class="math-item js-drop variable number"></div>
-        <div class="math-item result number"></div>
-      </div>
+  <div class="full-width-container">
+    <div id="container">
+      <h3>Points Test</h3>
+      <button class="addAgent">Add Agent</button>
+      <section id="mathSection" class="container">
+
+  		</section>
     </div>
   </div>
 
-  <script src="/interact.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.9.2/jquery-ui.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jsPlumb/1.4.1/jquery.jsPlumb-1.4.1-all-min.js"></script>
   <script src="/script.js"></script>
 
 </body>
